@@ -78,7 +78,6 @@ function LoadAjaxContent(url){
 			alert(errorThrown);
 		},
 		dataType: "html",
-		async: false
 	});
 }
 

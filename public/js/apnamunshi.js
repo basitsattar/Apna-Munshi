@@ -20,7 +20,6 @@ function LoadProductCategory(){
       alert(errorThrown);
     },
     dataType: "html",
-    async: false
   });
 }
 //function for loading price table in prices
@@ -40,7 +39,6 @@ function LoadPriceTable(){
       alert(errorThrown);
     },
     dataType: "html",
-    async: false
   });
 }
 function get_bill_fields(x){
@@ -82,7 +80,6 @@ function get_item_price(client_id,item_id,counter){
       alert(errorThrown);
     },
     dataType: "html",
-    async: false
   });
   return false;
 }

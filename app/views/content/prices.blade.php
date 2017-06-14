@@ -4,14 +4,14 @@
 		<div class="well">
 				<form action="{{url('clients/prices')}}" method="post" id="price_form">
 					 <label class="control-label">Select Client: </label>
-					<p><select name="client" id="client" class="select2">
+					<p><select name="client_id" id="client" class="select2">
 						<option value="" selected>Select Client</option>
 						@foreach($clients as $client)
 							<option value={{$client->id}}> {{$client->client_name}}</option>
 						@endforeach
 					</select></p>
 				    <?php echo Form::token()?>
-				    <p class="submit"><input type="submit" class="btn btn-success"  value="{{$update?"Update Product":"Add Product"}}" /></p>
+				    <p class="submit"><input type="submit" class="btn btn-success"  value="{{$update?"Update Prices":"View Prices"}}" /></p>
 				</form>
 		</div>
 	</div>
